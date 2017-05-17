@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Walkthrough</title>
+
+    <!-- default bootstrap: style your page like twitter -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- theme files: used to style over default bootstrap -->
+    <!-- try themes from: https://startbootstrap.com/-->
+    <!--<link rel="stylesheet" type="text/css" href="theme.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme2.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme3.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="theme4.css"> -->
+    <link rel="stylesheet" type="text/css" href="themeFlatly.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- animate.css: used to apply quick css animations -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+
+    <!--our own custom css overrides-->
+    <link rel="stylesheet" href="custom.css">
+
+    <!-- use this style for testing and development purposes only -->
+    <!--<style type="text/css">
+        .container {
+            border: 2px dotted green;
+        }
+
+        .row {
+            border: 1px dotted red;
+        }
+
+        .row [class*=' col-'] {
+            border: 2px dotted purple;
+        }
+    </style>-->
+
+</head>
+
+<body>
+
+    <!--Container for Page-->
+    <div class='container'>
+        <nav class="navbar navbar-primary">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <!-- hamburger button. do not touch! -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+                    <!-- HOME BUTTON: REPLACE href="#" with your landing page url -->
+                    <a class="navbar-brand" href="#">
+                        <!-- PUT BRAND LOGO / ICON HERE (instead of font-awesome -->
+                        <i class="fa fa-diamond"></i>
+                        <!--<img src='Thumbnail_1.jpg' style='width:50px'>-->
+                        <!--<i class="fa fa-telegram"></i>-->
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <!-- THIS UL HANDLES OUR LINKS -->
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="http://facebook.com">facebook</a></li>
+                        <li><a href="http://facebook.com">facebook2</a></li>
+                        <!-- to make more links, make some <li> in here -->
+                    </ul>
+                    <!--<ul class="nav navbar-nav navbar-right">
+                            <li><i class="fa fa-phone fa-2x"></i></li>
+                            <li><i class="fa fa-envelope fa-2x"></i></li>
+                            <!-- to make more links, make some <li> in here -->
+                    <!--</ul>-->
+                </div>
+            </div>
+        </nav>
+
+        <!--Main Row-->
+        <div class="row">
+
+            <!--Main Row Col 1 Left Panel-->
+
+            <div class='col-xs-12 col-sm-7 col-md-7 col-lg-7'>
+
+                <!--<div class="jumbotron my-jumbotron-background">-->
+                    <!--<h3>Welcome to </h3>-->
+                    <!--<p>Welcome to Service Centre</p>-->
+                    <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>-->
+                <!--</div>-->
+                <img class='my-main-image' src="Banner.png" alt="Welcome">
+                <br><br>
+                <img class='my-main-image' src="Map_Level_1.png" alt="Level 1 Map">
+            </div>
+
+
+            <!--End of Main Row Col 1 Left Panel Column-->
+
+            <!--Main Row Col 2 Right Panel-->
+            <div class='col-xs-12 col-sm-5 col-md-5 col-lg-5'>
+
+                <!--Start of Right Row 1 - Thumbnails-->
+                <div class='row '>
+
+                    <!--R Row 1 Col 1-->
+                    <div class='col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center'>
+                        <div class="thumbnail">
+                            <i class="animate infinite pulse fa fa-ticket fa-5x"></i>
+                            <div class="caption">
+                                <h3>Get in Queue</h3>
+                                <p>Get a queue ticket.</p>
+                                <p>Our friendly team can help with just about everything.</p>
+                                <p><a href="#" class="btn btn-primary" role="button">Yes, please!</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--R Row 1 Col 2-->
+                    <div class='col-xs-12 col-sm-6 col-md-6 col-lg-6 text-center'>
+                        <div class="thumbnail">
+                            <i class="fa fa-calendar-check-o fa-5x"></i>
+                            <div class="caption">
+                                <h3>Appointment</h3>
+                                <p>Make an appointment.</p>
+                                <p>Don't spend all day in our waiting room.</p>
+                                <p><a href="#" class="btn btn-primary" role="button">That sounds awesome!</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--R Row 1 Col 3
+                    <div class='col-xs-12 col-sm-4 col-md-4 col-lg-4'>
+                        <div class="thumbnail">
+                            <i class="fa fa-info-circle fa-5x"></i>
+                            <div class="caption">
+                                <h3>Self Help</h3>
+                                <p>Video Guides for Application Process</p>
+                                <p><a href="#" class="btn btn-primary" role="button">Self Help</a></p>
+                            </div>
+                        </div>
+                    </div>-->
+
+                </div>
+                <!--End of R Row 1 - Thumbnails-->
+                <hr>
+                <!--Start of R Row 2 - Form-->
+                <div class="row">
+                    <div class="col-xs-12 
+                        col-sm-12 
+                        col-md-12 
+                        col-lg-12">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Sign Up for SMS Q Alert</h3>
+                            </div>
+                            <div class="panel-body">
+                                <form action="https://coderinyou-1332.appspot.com/submit" method="POST">
+                                    <!--<legend>SMS Alert</legend>-->
+                                    <h4>An SMS alert will be sent to you when you are 3rd in line.</h4><br>
+                                    <div class='form-group '>
+                                        <label for='QNo '>Queue Number</label>
+                                        <input id='QNo ' type="text" name="QUEUENUMBER" placeholder="e.g. A1001" maxlength='5
+            ' class='form-control ' required>
+                                    </div>
+                                    <div class='form-group '>
+                                        <label for='Phone '>Mobile Phone</label>
+                                        <input id='Phone
+            ' type="text" name="PHONE" placeholder="Your phone number here" value='+65 ' maxlength="11" class='form-control '
+                                            required>
+                                    </div>
+                                    <div class='radio '>
+                                        <label for='radio '>
+                                <input id='radio ' type="radio" name="ApptType" value="1">Appointment<br>
+                                <input id='radio ' type="radio" name="ApptType" value="0">Walk In<br>
+                                </label>
+                                    </div>
+                                    <div class='form-group '>
+                                        <input type="submit" class='btn btn-primary ' value='Sign Up '>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End of R Row 2 - Form-->
+                <hr>
+
+                <!--Start of R Row 3 - Responsive Embed-->
+                <div class="row">
+                    <!--Row 3 Col 1-->
+                    <div class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
+                        <!--Responsive Video-->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <vid src="Event_Listing.wmv?autoplay=1&loop=1"></vid>
+                        </div>
+                    </div>
+                </div>
+                <!--End of R Row 3 - Responsive Embed-->
+                <hr>
+                <!--Start of R Row 4 - General Info-->
+                <div class="row">
+
+                    <!--Row 4 Col 1 Table Hours-->
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <h3 class='text-center'>Visit Us</h3>
+                        <table class='table'>
+                            <tr>
+                                <th>Day</th>
+                                <th>Hours</th>
+                            </tr>
+                            <tr>
+                                <td>Monday to Friday</td>
+                                <td>9 am - 5 pm</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>9 am - 1 pm</td>
+                            </tr>
+                            <tr>
+                                <td>Sunday</td>
+                                <td>Closed</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!--Row 4 Col 2 Table-->
+                    <div class='col-xs-12 col-sm-6 col-md-6 col-lg-6'>
+                        <h3 class='text-center'>Contact Us</h3>
+                        <div class='list-group'>
+                            <a href="#" class='list-group-item'>
+                                <i class="fa fa-map-marker fa-fw"></i>&nbsp;123 Main Street Sinsgpore
+                            </a>
+                            <a href="#" class='list-group-item'>
+                                <i class="fa fa-phone fa-fw"></i>&nbsp;+65 1234 5678
+                            </a>
+                            <a href="#" class='list-group-item'>
+                                <i class="fa fa-envelope fa-fw"></i>&nbsp;hello@email.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--End of of R Row 4 - General Info-->
+                <hr>
+                <!--Start of R Row 5 - Map-->
+                <div class="row">
+                    <h3 class='text-center'>Locate Us</h3><br>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 embed-responsive embed-responsive-4by3">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.764942358692!2d103.86435741478923!3d1.3166269620479578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19cd5e5ba52b%3A0x2f0c4f3209b19059!2s16+Kallang+Pl%2C+Singapore+339156!5e0!3m2!1sen!2ssg!4v1494997262247"
+                            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!--End of R Row 5 - Map-->
+                <hr>
+                <!--Start of R Row 6 - Text-->
+                <div class="row">
+                    <div class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
+                        <h2 class='text-primary text-center'>Title</h2>
+                        <p class='text-center'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque veniam ipsum, id vel quae sed nam
+                            deleniti reprehenderit incidunt...</p>
+                    </div>
+                </div>
+                <!--End of R Row 6 - Text-->
+
+            </div>
+            <!--Main Row Col 2 Right Panel-->
+        </div>
+        <!--End of Main Row-->
+
+    </div>
+    <!--End of Container-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jquery: used by bootstrap.js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- bootstrap js: used to run fancy components like carousel -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <!-- wow.js: used to make animate.css run on view -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

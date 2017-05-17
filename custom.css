@@ -1,0 +1,14 @@
+.my-jumbotron-background{
+    background-image: url('Jumbo.jpg');
+    background-size: cover;
+    max-height: 10vh;
+}
+
+.my-jumbotron-header{
+    font-size: 10px;
+}
+
+.my-main-image{
+    max-width: 650px;
+
+}
